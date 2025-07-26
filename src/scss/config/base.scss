@@ -1,11 +1,6 @@
-@import "functions";
-@import "mixins";
-@import "keyframes";
-
 /* ------------------------------------------------------------------------------------------------------------------------------
 BASE
 --------------------------------------------------------------------------------------------------------------------------------*/
-
 html {
 	scroll-behavior: smooth;
 }
@@ -71,7 +66,27 @@ body {
 	}
 }
 
-.wrapper {
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  clip: auto;
+  background: #000; /* или другой фон для выделения */
+  color: #fff; /* цвет текста */
+  padding: 8px;
+  z-index: 1000;
+}
+
+.site-wrapper {
 	display: flex;
 	min-block-size: 100%;
 
@@ -80,7 +95,7 @@ body {
 	flex-direction: column;
 }
 
-.page {
+.site-main {
 	position: relative;
 	flex: 1 1 auto;
 }

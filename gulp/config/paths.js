@@ -7,6 +7,7 @@ const filePaths = {
   build: {
     js: `${buildFolder}/js/`,
     css: `${buildFolder}/css/`,
+    postcss: `${buildFolder}/postcss/`,
     images: `${buildFolder}/images/`,
     svg: `${buildFolder}/icons/`,
     fonts: `${buildFolder}/fonts/`,
@@ -17,6 +18,7 @@ const filePaths = {
     images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/icons/*.svg`,
     scss: [`${srcFolder}/scss/main.scss`, `!${srcFolder}/scss/**/_*.scss`, `${srcFolder}/scss/pages/*.scss`],
+    postcss: [`${buildFolder}/css/*.css`,`${buildFolder}/css/**/*.css`],
     html: `${srcFolder}/*.html`,
     static: `${srcFolder}/vendor/**/*.*`,
     svgIcons: `${srcFolder}/icons/*.svg`,
