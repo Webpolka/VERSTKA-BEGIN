@@ -3,10 +3,9 @@
 	@@include('html/components/head.html', { 'title': 'Главная' })
 
 	<body>
-		<div class="site-wrapper">
-			<a class="skip-link screen-reader-text" href="#primary">Перейти к контенту</a>
+		<div class="site-wrapper">			
 			@@include('html/sections/header.html')
-			<main id="primary" class="site-main" role="main">
+			<main id="primary" class="site-main">
 				@@include('html/sections/content.html')
 			</main>
 			@@include('html/sections/footer.html')
